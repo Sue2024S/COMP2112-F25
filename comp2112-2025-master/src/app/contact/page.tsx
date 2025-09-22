@@ -28,12 +28,14 @@ export default function Contact() {
 //1. include return
   return(  
     <main>
-      <h1>Contact Us</h1>
-      <p>Contact Us at 705.000.000 </p>
-      <input type="text" placeholder="Your Name" value={name} />
-      <p>Your name is: {name}</p>
-      
-      <button> Submit </button>
+        <h1>Contact Us</h1>
+        <p>Contact Us at 705.000.000 </p>
+        <input type="text" placeholder="Your Name" value={name} onChange={handleNameChange}/>
+        <p>Your name is: {name}</p>
+        
+        <input type="text" placeholder="Your Message" value={message} onChange={handleMessageChange}/>
+        <button onClick={handleSubmit}> Submit </button>
+        <p>{confirmation}</p>
     </main>
   );
 }  
