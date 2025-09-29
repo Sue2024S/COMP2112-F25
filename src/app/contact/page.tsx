@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from "react";
+import PageTitle from "../components/PageTitle";
 
 export default function Contact() {
   //2. const to set state
@@ -28,6 +29,7 @@ export default function Contact() {
 //1. include return
   return(  
     <main>
+        <PageTitle title="Contact"/>
         <h1>Contact Us</h1>
         <p>Contact Us at 705.000.000 </p>
         <input type="text" placeholder="Your Name" value={name} onChange={handleNameChange}/>
